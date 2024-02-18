@@ -6,6 +6,7 @@ import messageIcon from "../../assets/message.svg";
 import tickIcon from "../../assets/tick.svg";
 import calendarIcon from "../../assets/calendar.svg";
 import clockIcon from "../../assets/clock.svg";
+import worldIcon from "../../assets/world.svg";
 import "./Description.css";
 
 export const CompanyDescription = () => {

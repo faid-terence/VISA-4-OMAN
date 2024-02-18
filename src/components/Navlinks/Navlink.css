@@ -1,0 +1,66 @@
+.navlink-header {
+  background-color: #f16333;
+  padding: 26px 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+  font-weight: 500;
+  max-width: 280px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  width: 71px;
+  gap: 13px;
+  font-size: 16px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.back-link {
+  align-self: start;
+  margin-top: 9px;
+  font-family: "IBM Plex Sans Arabic, -apple-system, Roboto, Helvetica, sans-serif";
+}
+
+.logo-image {
+  width: 100%;
+  flex: 1;
+  object-fit: auto;
+  aspect-ratio: 1;
+}
+
+.navlink-nav {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+  font-size: 24px;
+  color: #fefefe;
+  margin-bottom: 560px;
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px 0 15px;
+}
+
+.nav-section a {
+  font-family: "IBM Plex Sans Arabic, -apple-system, Roboto, Helvetica, sans-serif";
+  margin-top: 24px;
+}
+
+.logo-image {
+  width: 42px;
+  height: 40px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
