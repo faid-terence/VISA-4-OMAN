@@ -1,9 +1,29 @@
 import React, { useState } from "react";
 import closeIcon from "../../assets/Close.svg";
 import "./Upload.css";
+import useDrivePicker from "react-google-drive-picker";
 
 export const UploadComponent = () => {
   const [isOpen, setIsOpen] = useState(true);
+  const [openPicker, authResponse] = useDrivePicker();
+  const handleOpenPicker = () => {
+    openPicker({
+      clientId:
+        "657067571471-ep5smabkno63h5mt0p0k9kujk6ikj31a.apps.googleusercontent.com",
+      developerKey: "AIzaSyAK86TLOmnTsI3wvBV4kRyE1US3a-mztgA",
+      viewId: "DOCS",
+      showUploadView: true,
+      showUploadFolders: true,
+      supportDrives: true,
+      multiselect: true,
+      callbackFunction: (data) => {
+        if (data.action === "cancel") {
+          console.log("User clicked cancel/close button");
+        }
+        console.log(data);
+      },
+    });
+  };
 
   const handleClose = () => {
     setIsOpen(false);
@@ -22,7 +42,9 @@ export const UploadComponent = () => {
           </div>
           <div className="upload">
             <h4>قم بتحميل الملفات المطلوبة لمعالجة طلبك</h4>
-            <button className="upload-btn">Upload</button>
+            <button className="upload-btn" onClick={() => handleOpenPicker()}>
+              Upload
+            </button>
           </div>
           <button className="next-upload">Next</button>
         </div>
