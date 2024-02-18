@@ -1,6 +1,5 @@
 .application {
   background: #f16333;
-  height: 677px;
 }
 .application h3 {
   text-align: center;
@@ -83,4 +82,15 @@
 .card img {
   margin-top: 30px;
   margin-left: 140px;
+}
+
+@media screen and (max-width: 768px) {
+  .content-header2 {
+    margin-left: 0;
+    width: 100%;
+  }
+  .options-container {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
 }
