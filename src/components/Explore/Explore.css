@@ -73,3 +73,24 @@
   width: 100px;
   height: auto;
 }
+
+@media screen and (max-width: 768px) {
+  .info-section {
+    padding: 49px 20px;
+  }
+  .national-emblem {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .info-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 0 0;
+  }
+  .explore-image {
+    width: 100%;
+  }
+  .slogan-image {
+    width: 60px;
+  }
+}
