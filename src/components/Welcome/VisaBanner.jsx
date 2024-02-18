@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../../assets/logo.svg";
 import menuIcon from "../../assets/menu.svg";
 import "./Welcome.css";
@@ -11,6 +11,24 @@ function VisaBanner() {
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
+
+  useEffect(() => {
+    const handleBodyClick = () => {
+      setIsNavOpen(false);
+    };
+
+    document.body.addEventListener("click", handleBodyClick);
+
+    return () => {
+      document.body.removeEventListener("click", handleBodyClick);
+    };
+  }, []);
+
+  const handleMenuClick = (e) => {
+    e.stopPropagation();
+    toggleNav();
+  };
+
   return (
     <div className="hero">
       <header>
@@ -19,7 +37,7 @@ function VisaBanner() {
             <img src={logo} alt="Logo" />
           </div>
           <div className="menu">
-            <img src={menuIcon} alt="Menu" onClick={toggleNav} />
+            <img src={menuIcon} alt="Menu" onClick={handleMenuClick} />
           </div>
         </div>
       </header>
