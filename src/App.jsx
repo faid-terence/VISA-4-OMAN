@@ -23,7 +23,6 @@ function App() {
       <StatisticsComponent />
       <Faq />
       <Footer />
-      <VisaOptions />
     </>
   );
 }

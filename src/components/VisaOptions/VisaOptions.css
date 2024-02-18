@@ -7,8 +7,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  backdrop-filter: blur(4px); /* Add backdrop blur */
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
 }
 
 .visa-options {
@@ -24,10 +24,15 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  color: #103c55;
+}
+.head h2 {
+  color: red;
 }
 
 .options-title {
   text-align: end;
+  color: #103c55;
 }
 
 .selector {
@@ -38,7 +43,7 @@
 }
 .selector1,
 .selector2 {
-  border: 1px solid #103c55;
+  border: 3px solid #103c55;
   width: 300px;
   height: 120px;
   text-align: center;
@@ -73,4 +78,13 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.selected {
+  background: #f16333;
+}
+
+.selected .title,
+.selected .para {
+  color: #fff;
 }
