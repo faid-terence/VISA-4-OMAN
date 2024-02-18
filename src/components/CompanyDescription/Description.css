@@ -48,3 +48,12 @@
 .right-content {
   margin-bottom: 80px;
 }
+
+@media screen and (max-width: 768px) {
+  .decription-container {
+    flex-direction: column;
+  }
+  .right-feature {
+    padding-right: 0px;
+  }
+}
