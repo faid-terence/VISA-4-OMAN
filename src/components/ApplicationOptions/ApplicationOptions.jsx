@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import "./ApplicationOptions.css";
 import icon1 from "../../assets/icon2.svg";
