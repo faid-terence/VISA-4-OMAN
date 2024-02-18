@@ -5,7 +5,9 @@ import useDrivePicker from "react-google-drive-picker";
 
 export const UploadComponent = () => {
   const [isOpen, setIsOpen] = useState(true);
+  const [uploadedDocument, setUploadedDocument] = useState(null);
   const [openPicker, authResponse] = useDrivePicker();
+
   const handleOpenPicker = () => {
     openPicker({
       clientId:
@@ -19,6 +21,8 @@ export const UploadComponent = () => {
       callbackFunction: (data) => {
         if (data.action === "cancel") {
           console.log("User clicked cancel/close button");
+        } else {
+          setUploadedDocument(data.docs[0]);
         }
         console.log(data);
       },
@@ -29,6 +33,7 @@ export const UploadComponent = () => {
     setIsOpen(false);
     onClose();
   };
+
   return (
     isOpen && (
       <div className="modal-container">
@@ -45,6 +50,7 @@ export const UploadComponent = () => {
             <button className="upload-btn" onClick={() => handleOpenPicker()}>
               Upload
             </button>
+            {uploadedDocument && <p>Uploaded File: {uploadedDocument.name}</p>}
           </div>
           <button className="next-upload">Next</button>
         </div>
