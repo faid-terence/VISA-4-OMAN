@@ -24,7 +24,7 @@ function App() {
       <ApplicationOptions />
       <StatisticsComponent />
       <Faq />
-      <Footer />w
+      <Footer />
     </>
   );
 }

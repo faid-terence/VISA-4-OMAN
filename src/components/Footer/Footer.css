@@ -4,7 +4,6 @@ footer {
   align-items: flex-end;
   background: #103c55;
   padding: 20px;
-  height: 361px;
 }
 .leftContent {
   padding-left: 80px;
@@ -30,4 +29,17 @@ footer {
 
 .rightContent .motto img {
   width: auto;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column-reverse;
+  }
+  .rightContent {
+    width: 100%;
+    padding-right: 0;
+  }
+  .motto {
+    display: none;
+  }
 }
