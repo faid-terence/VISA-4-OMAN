@@ -20,7 +20,7 @@ function StatisticsComponent() {
       description: "تأشيرة تم إصدارها",
     },
     {
-      icon: usersIcon ,
+      icon: usersIcon,
       count: "150+",
       description: "مصري استقرّ في عُمان للعمل",
     },
@@ -52,7 +52,7 @@ function StatisticsComponent() {
           flex-direction: column;
           color: #fefefe;
           text-align: center;
-          margin: 0 40px;
+          margin: 0 80px;
         }
         .statistic-icon {
           width: 64px;

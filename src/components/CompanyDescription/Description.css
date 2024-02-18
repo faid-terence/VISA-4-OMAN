@@ -33,8 +33,62 @@
   color: #103c55;
   font-family: "IBM Plex Sans Arabic";
   font-weight: 400;
+  height: 60px;
+  width: 400px;
+  margin-left: 200px;
+}
+.infoText:hover {
+  color: #fff;
+}
+.one:hover {
+  background: #3e90c0;
+  padding-top: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  width: 400px;
+  margin-left: 200px;
+}
+.two:hover {
+  background: #ffbd00;
+  padding-top: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  width: 400px;
+  margin-left: 200px;
+}
+.three:hover {
+  background: #c31162;
+  padding-top: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  width: 400px;
+  margin-left: 200px;
 }
 
+.four:hover {
+  background: #228b4b;
+  padding-top: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  width: 400px;
+  margin-left: 200px;
+}
+.five:hover {
+  background: #f16333;
+  padding-top: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  width: 400px;
+  margin-left: 200px;
+}
+.six:hover {
+  background: #9747ff;
+  padding-top: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  width: 400px;
+  margin-left: 200px;
+}
 .img-container {
   display: inline-block;
   vertical-align: middle;
@@ -55,5 +109,14 @@
   }
   .right-feature {
     padding-right: 0px;
+  }
+  .infoText,
+  .one:hover,
+  .two:hover,
+  .three:hover,
+  .four:hover,
+  .five:hover,
+  .six:hover {
+    margin-left: 0;
   }
 }
