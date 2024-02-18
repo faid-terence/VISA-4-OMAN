@@ -1,0 +1,33 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: #103c55;
+  padding: 20px;
+  height: 361px;
+}
+.leftContent {
+  padding-left: 80px;
+}
+.rightContent {
+  color: #fff;
+  text-align: end;
+  padding-right: 60px;
+}
+
+.rightContent img {
+  width: 100px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 30px;
+}
+
+.rightContent .motto img {
+  width: auto;
+}

@@ -1,0 +1,75 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      180deg,
+      rgba(217, 217, 217, 0.24) 0%,
+      #061c3d 85.23%
+    ),
+    url("../../assets/Oman.svg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.main-content :hover {
+  transform: scale(1.06);
+}
+.content-header {
+  position: relative;
+  width: 100%;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-section {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  padding: 49px 80px;
+}
+
+.national-emblem {
+  aspect-ratio: 1;
+  object-fit: cover;
+  width: 192px;
+  margin-top: 258px;
+  align-self: center;
+}
+
+.info-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 172px 22px 0 16px;
+}
+
+.explore-image {
+  object-fit: cover;
+  width: 263px;
+  margin-top: 37px;
+}
+
+.text-content {
+  font-family: "IBM Plex Sans Arabic", "-apple-system", "Roboto", Helvetica,
+    sans-serif;
+  align-self: start;
+}
+.title-text {
+  font-size: 28px;
+  color: rgba(241, 99, 51, 1);
+}
+.description-text {
+  margin-top: 10px;
+  color: white;
+}
+.slogan-image {
+  width: 100px;
+  height: auto;
+}

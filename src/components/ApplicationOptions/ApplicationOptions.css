@@ -1,0 +1,86 @@
+.application {
+  background: #f16333;
+  height: 677px;
+}
+.application h3 {
+  text-align: center;
+  color: #fff;
+}
+.content-header2 {
+  display: flex;
+  justify-content: center;
+  width: 602px;
+  height: 116px;
+  background: #103c55;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 1290px;
+}
+
+.options-container {
+  display: flex;
+  justify-content: center;
+  background: url("../../assets/inspect.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+
+.card-container {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+  margin-bottom: 30px;
+  width: 398px;
+  height: 384px;
+  margin-right: 15px;
+  margin-left: 55px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  width: 305px;
+  height: 306px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-25px);
+}
+
+.card h3 {
+  text-align: center;
+  color: #103c55;
+  margin-left: 80px;
+  margin-bottom: 40px;
+}
+.card .card-button {
+  margin-top: 30px;
+  width: 153px;
+  height: 48px;
+  align-content: center;
+  margin-left: 100px;
+  background: #f16333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.card p {
+  text-align: center;
+  padding-left: 70px;
+  color: #103c55;
+  font-size: 18px;
+}
+
+.card img {
+  margin-top: 30px;
+  margin-left: 140px;
+}

@@ -1,0 +1,94 @@
+.contact-section {
+  background-color: #103c55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 41px 60px;
+}
+@media (max-width: 991px) {
+  .contact-section {
+    padding: 0 20px;
+  }
+}
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1226px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .content-wrapper {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.contact-details {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+}
+.contact-title {
+  color: #fff;
+  text-align: right;
+  align-self: end;
+  white-space: nowrap;
+  font: 700 22px/236% "IBM Plex Sans Arabic", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+@media (max-width: 991px) {
+  .contact-title {
+    white-space: initial;
+  }
+}
+.contact-info {
+  display: flex;
+  margin-top: 27px;
+  justify-content: space-between;
+  gap: 7px;
+}
+.contact-text {
+  color: #fefefe;
+  text-align: right;
+  text-decoration-line: underline;
+  font: 500 18px/42px "IBM Plex Sans Arabic", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+.contact-logos {
+  display: flex;
+  flex-basis: 0%;
+  flex-direction: column;
+  align-items: center;
+}
+.company-info {
+  align-self: end;
+  display: flex;
+  margin-top: 84px;
+  flex-direction: column;
+  align-items: end;
+}
+@media (max-width: 991px) {
+  .company-info {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+.company-description {
+  color: #fefefe;
+  text-align: right;
+  align-self: stretch;
+  font: 500 18px/28px "IBM Plex Sans Arabic", -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+@media (max-width: 991px) {
+  .company-description {
+    max-width: 100%;
+  }
+}
+.company-logo-wrapper {
+  display: flex;
+  margin-top: 40px;
+  width: 92px;
+  gap: 11px;
+}

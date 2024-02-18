@@ -1,0 +1,70 @@
+.hero {
+  background-image: linear-gradient(
+      180deg,
+      rgba(217, 217, 217, 0.24) 0%,
+      #061c3d 85.23%
+    ),
+    url("../../assets/hero-image.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 30px;
+  padding-top: 30px;
+  background: transparent;
+}
+
+.welcome-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 931px;
+  height: 442px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.welcome-wrapper .introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #103c55;
+  color: #f16333;
+  font-size: 30px;
+  font-weight: bold;
+  width: 470px;
+  height: 143px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.welcome-wrapper .span {
+  color: #fff;
+}
+.welcome-wrapper .welcome-btn {
+  margin-top: 30px;
+  background-color: #f16333;
+  font-size: 20px;
+  width: 500px;
+  height: 48px;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  color: #fff;
+}
+
+.welcome-wrapper .welcome-btn:hover {
+  background-color: #103c55;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.menu {
+  cursor: pointer;
+}

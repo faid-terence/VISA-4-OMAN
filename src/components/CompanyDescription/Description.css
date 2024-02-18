@@ -1,0 +1,50 @@
+.decription-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.left-features,
+.right-feature {
+  flex: 1;
+  text-align: right;
+  background: url("../../assets/inspect.svg");
+}
+
+.center-feature {
+  flex: 1;
+  text-align: center;
+  background: url("../../assets/group.svg");
+  background-size: contain;
+}
+
+.headerTitle {
+  font-size: 24px;
+  color: #103c55;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.headerTitle:hover {
+  color: #f16333;
+}
+.infoText {
+  font-size: 20px;
+  color: #103c55;
+  font-family: "IBM Plex Sans Arabic";
+  font-weight: 400;
+}
+
+.img-container {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.right-feature {
+  padding-right: 80px;
+}
+
+.left-content,
+.right-content {
+  margin-bottom: 80px;
+}
