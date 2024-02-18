@@ -1,0 +1,35 @@
+.uploading {
+  width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 367px;
+}
+
+.upload {
+  margin-top: 30px;
+  text-align: center;
+  color: #103c55;
+}
+
+.upload-btn {
+  margin-top: 30px;
+  width: 500px;
+  height: 48px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background: #f16333;
+}
+
+.next-upload {
+  margin-top: 80px;
+  margin-left: 40px;
+  background: #f16333;
+  border: none;
+  width: 100px;
+  border-radius: 5px;
+  height: 48px;
+  color: #fff;
+}
