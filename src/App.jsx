@@ -11,6 +11,7 @@ import StatisticsComponent from "./components/Statics/StaticsComponent";
 import { Faq } from "./components/FAQ/Faq";
 import { VisaOptions } from "./components/VisaOptions/VisaOptions";
 import { VisaGuide } from "./components/VisaGuide/VisaGuide";
+import { UploadComponent } from "./components/Upload/UploadComponent";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -24,7 +25,6 @@ function App() {
       <StatisticsComponent />
       <Faq />
       <Footer />
-      {/* <VisaGuide /> */}
     </>
   );
 }
