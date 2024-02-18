@@ -18,9 +18,9 @@ export const CompanyDescription = () => {
               <img src={icon1} alt="" />
             </div>
             <h1 className="headerTitle">انتقال سلس</h1>
-            <article className="infoText">
-              نوفر مسارًا خاليًا من المتاعب لاستكشاف <br />جمال عُمان ومن ثم الانتقال
-              بسلاسة إلى تأشيرات العمل
+            <article className="infoText one">
+              نوفر مسارًا خاليًا من المتاعب لاستكشاف <br />
+              جمال عُمان ومن ثم الانتقال بسلاسة إلى تأشيرات العمل
             </article>
           </div>
           <div className="left-content">
@@ -28,7 +28,7 @@ export const CompanyDescription = () => {
               <img src={userIcon} alt="" />
             </div>
             <h1 className="headerTitle">حلول مصممة خصيصاً لك </h1>
-            <article className="infoText">
+            <article className="infoText two">
               سواء كنت تبحث عن مغامرات قصيرة الأمد أو فرص مهنية، فإن خدماتنا
               المتنوعة تلبي احتياجاتك
             </article>
@@ -38,8 +38,9 @@ export const CompanyDescription = () => {
               <img src={messageIcon} alt="" />
             </div>
             <h1 className="headerTitle">نحن هنا للمساعدة</h1>
-            <article className="infoText">
-              يضمن فريقنا المخصص أن نكون لك <br />مرشدًا ومساعدًا في كل خطوة.
+            <article className="infoText three">
+              يضمن فريقنا المخصص أن نكون لك <br />
+              مرشدًا ومساعدًا في كل خطوة.
             </article>
           </div>
         </div>
@@ -53,7 +54,7 @@ export const CompanyDescription = () => {
               <img src={tickIcon} alt="" />
             </div>
             <h1 className="headerTitle">الخبرة والاعتماد</h1>
-            <article className="infoText">
+            <article className="infoText four">
               وكالتنا معتمدة من قبل سفارة عُمان، مما يضمن لك المصداقية والوثوقية
               العالية. 
             </article>
@@ -63,7 +64,7 @@ export const CompanyDescription = () => {
               <img src={calendarIcon} alt="" />
             </div>
             <h1 className="headerTitle">فيزا ببساطة!</h1>
-            <article className="infoText">
+            <article className="infoText five">
               قدم أوراقك عن طريق موقعنا الالكتروني أو تفضل بزيارة أحد فروع
               وكلائنا المعتمدين 
             </article>
@@ -73,7 +74,7 @@ export const CompanyDescription = () => {
               <img src={clockIcon} alt="" />
             </div>
             <h1 className="headerTitle">أنجز بسرعة</h1>
-            <article className="infoText">
+            <article className="infoText six">
               نوفر مسارًا خاليًا من المتاعب لاستكشاف جمال عُمان ومن ثم الانتقال
               بسلاسة إلى تأشيرات العمل
             </article>
