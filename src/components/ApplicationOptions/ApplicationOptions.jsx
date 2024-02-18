@@ -1,4 +1,3 @@
-// ApplicationOptions.js
 
 import React, { useState } from "react";
 import "./ApplicationOptions.css";
@@ -48,8 +47,6 @@ export const ApplicationOptions = () => {
           </div>
         </div>
       </div>
-
-      {/* Conditionally render the VisaOptions modal */}
       {modalOpen && <VisaOptions onClose={toggleModal} />}
     </main>
   );
