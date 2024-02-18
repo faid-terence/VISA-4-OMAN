@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/logo.svg";
 import menuIcon from "../../assets/menu.svg";
 import "./Welcome.css";
 import heroImage from "../../assets/hero.svg";
+import Navlink from "../Navlinks/Navlink";
 
 function VisaBanner() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
   return (
     <div className="hero">
       <header>
@@ -13,10 +19,11 @@ function VisaBanner() {
             <img src={logo} alt="Logo" />
           </div>
           <div className="menu">
-            <img src={menuIcon} alt="Menu" />
+            <img src={menuIcon} alt="Menu" onClick={toggleNav} />
           </div>
         </div>
       </header>
+      {isNavOpen && <Navlink />}
       <section className="Welcome">
         <div className="welcome-wrapper">
           <div className="introduction">

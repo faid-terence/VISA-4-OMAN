@@ -12,6 +12,7 @@ import { Faq } from "./components/FAQ/Faq";
 import { VisaOptions } from "./components/VisaOptions/VisaOptions";
 import { VisaGuide } from "./components/VisaGuide/VisaGuide";
 import { UploadComponent } from "./components/Upload/UploadComponent";
+import { Navlink } from "./components/Navlinks/Navlink";
 
 function App() {
   const [count, setCount] = useState(0);
