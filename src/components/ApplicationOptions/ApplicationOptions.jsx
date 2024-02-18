@@ -1,9 +1,18 @@
-import React from "react";
+// ApplicationOptions.js
+
+import React, { useState } from "react";
 import "./ApplicationOptions.css";
 import icon1 from "../../assets/icon2.svg";
 import icon2 from "../../assets/icon3.svg";
+import { VisaOptions } from "../VisaOptions/VisaOptions";
 
 export const ApplicationOptions = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setModalOpen(!modalOpen);
+  };
+
   return (
     <main className="application">
       <div className="content-header2">
@@ -19,7 +28,9 @@ export const ApplicationOptions = () => {
               تفضل بزيارة أحد وكالات السياحة المعتمدة لدينا والمنتشرة ضمن أنحاء
               الجمهورية لتقديم أوراقك
             </p>
-            <button className="card-button">ابدأ</button>
+            <button className="card-button" onClick={toggleModal}>
+              ابدأ
+            </button>
           </div>
         </div>
 
@@ -31,10 +42,15 @@ export const ApplicationOptions = () => {
               قم بإرسال مستنداتك عبر بوابتنا الالكترونية وستصلك الفيزا عن طريق
               الواتساب
             </p>
-            <button className="card-button">ابدأ</button>
+            <button className="card-button" onClick={toggleModal}>
+              ابدأ
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Conditionally render the VisaOptions modal */}
+      {modalOpen && <VisaOptions onClose={toggleModal} />}
     </main>
   );
 };

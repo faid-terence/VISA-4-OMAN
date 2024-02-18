@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer";
 import { ApplicationOptions } from "./components/ApplicationOptions/ApplicationOptions";
 import StatisticsComponent from "./components/Statics/StaticsComponent";
 import { Faq } from "./components/FAQ/Faq";
+import { VisaOptions } from "./components/VisaOptions/VisaOptions";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
       <StatisticsComponent />
       <Faq />
       <Footer />
+      <VisaOptions />
     </>
   );
 }
