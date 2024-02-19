@@ -13,7 +13,9 @@ export const Faq = () => {
             <span>&#x3e;</span>اختبار كتابة اختبار كتابة اختبار كتابة اختبار
             كتابة اختبار كتابة؟
           </label>
+
           <input type="radio" name="accordion" id="first" />
+          <div className="line"></div>
           <div className="content">
             اختبار كتابة اختبار كتابة اختبار كتابة اختبار كتابة اختبار كتابة
             اختبار كتابة اختبار كتابة اختبار كتابة اختبار كتابة اختبار كتابة

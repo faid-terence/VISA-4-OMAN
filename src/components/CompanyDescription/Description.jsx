@@ -11,7 +11,7 @@ import "./Description.css";
 
 export const CompanyDescription = () => {
   return (
-    <section>
+    <section className="desc">
       <div className="decription-container">
         <div className="left-features">
           <div className="left-content">
