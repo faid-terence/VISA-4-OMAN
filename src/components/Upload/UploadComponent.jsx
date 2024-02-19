@@ -65,9 +65,10 @@ export const UploadComponent = () => {
               >
                 Next
               </button>
-
               {index === uploadedDocuments.length - 2 ? null : (
-          
+
+
+
                 <p className="warn">
                   من فضلك تأكد من رفع الملفات في احدي الصيغ التالية لتستطيع
                   المتابعة: (pdf , png , jepg)
