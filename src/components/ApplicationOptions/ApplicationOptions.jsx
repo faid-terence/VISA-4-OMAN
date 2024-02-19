@@ -47,7 +47,6 @@ export const ApplicationOptions = () => {
           </div>
         </div>
       </div>
-      {/* {modalOpen && <VisaOptions onClose={toggleModal} />} */}
       {modalOpen && <VisaType onClose={toggleModal} />}
     </main>
   );
