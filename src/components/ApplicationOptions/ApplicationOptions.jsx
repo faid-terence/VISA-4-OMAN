@@ -3,6 +3,7 @@ import "./ApplicationOptions.css";
 import icon1 from "../../assets/icon2.svg";
 import icon2 from "../../assets/icon3.svg";
 import { VisaOptions } from "../VisaOptions/VisaOptions";
+import { VisaType } from "../VisaType/VisaType";
 
 export const ApplicationOptions = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -46,7 +47,8 @@ export const ApplicationOptions = () => {
           </div>
         </div>
       </div>
-      {modalOpen && <VisaOptions onClose={toggleModal} />}
+      {/* {modalOpen && <VisaOptions onClose={toggleModal} />} */}
+      {modalOpen && <VisaType onClose={toggleModal} />}
     </main>
   );
 };
