@@ -5,10 +5,14 @@ import useDrivePicker from "react-google-drive-picker";
 
 export const UploadComponent = () => {
   const [isOpen, setIsOpen] = useState(true);
-  const [uploadedDocument, setUploadedDocument] = useState(null);
+  const [uploadedDocuments, setUploadedDocuments] = useState([
+    null,
+    null,
+    null,
+  ]);
   const [openPicker, authResponse] = useDrivePicker();
 
-  const handleOpenPicker = () => {
+  const handleOpenPicker = (index) => {
     openPicker({
       clientId:
         "657067571471-ep5smabkno63h5mt0p0k9kujk6ikj31a.apps.googleusercontent.com",
@@ -22,7 +26,9 @@ export const UploadComponent = () => {
         if (data.action === "cancel") {
           console.log("User clicked cancel/close button");
         } else {
-          setUploadedDocument(data.docs[0]);
+          const updatedDocuments = [...uploadedDocuments];
+          updatedDocuments[index] = data.docs[0];
+          setUploadedDocuments(updatedDocuments);
         }
         console.log(data);
       },
@@ -39,20 +45,37 @@ export const UploadComponent = () => {
       <div className="modal-container">
         <div className="uploading">
           <div className="head">
-            <p>خطوة 2 من 3</p>
+            <p>خطوة 2 من 4</p>
             <h3>نوع الفيزا</h3>
             <button className="close-button" onClick={handleClose}>
               <img src={closeIcon} alt="Close" />
             </button>
           </div>
-          <div className="upload">
-            <h4>قم بتحميل الملفات المطلوبة لمعالجة طلبك</h4>
-            <button className="upload-btn" onClick={() => handleOpenPicker()}>
-              Upload
-            </button>
-            {uploadedDocument && <p>Uploaded File: {uploadedDocument.name}</p>}
-          </div>
-          <button className="next-upload">Next</button>
+          {uploadedDocuments.map((uploadedDocument, index) => (
+            <div
+              className={`upload ${
+                index > 0 && !uploadedDocuments[index - 1] ? "hidden" : ""
+              }`}
+              key={index}
+            >
+              <h4>1. قم بتحميل رسالة تأكيد الدفع</h4>
+              <button
+                className="next-upload"
+                onClick={() => handleOpenPicker(index)}
+              >
+                Next
+              </button>
+              {index === uploadedDocuments.length - 2 ? null : (
+                <p className="warn">
+                  من فضلك تأكد من رفع الملفات في احدي الصيغ التالية لتستطيع
+                  المتابعة: (pdf , png , jepg)
+                </p>
+              )}
+              {uploadedDocument && (
+                <p>Uploaded File: {uploadedDocument.name}</p>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     )

@@ -112,6 +112,7 @@
 @media screen and (max-width: 768px) {
   .decription-container {
     flex-direction: column-reverse;
+    width: 100%;
   }
   .right-feature {
     padding-right: 0px;
@@ -123,9 +124,10 @@
   .four:hover,
   .five:hover,
   .six:hover {
-    margin-left: 0;
+    margin-left: 0px;
   }
   .center-feature {
     display: none;
+    margin: 0;
   }
 }

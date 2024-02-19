@@ -15,7 +15,6 @@ export const Faq = () => {
           </label>
 
           <input type="radio" name="accordion" id="first" />
-          <div className="line"></div>
           <div className="content">
             اختبار كتابة اختبار كتابة اختبار كتابة اختبار كتابة اختبار كتابة
             اختبار كتابة اختبار كتابة اختبار كتابة اختبار كتابة اختبار كتابة
