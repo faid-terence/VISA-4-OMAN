@@ -60,6 +60,8 @@
   color: #103c55;
   margin-left: 80px;
   margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: bold;
 }
 .card .card-button {
   margin-top: 30px;
@@ -77,6 +79,7 @@
   padding-left: 70px;
   color: #103c55;
   font-size: 18px;
+  font-weight: 400;
 }
 
 .card img {
