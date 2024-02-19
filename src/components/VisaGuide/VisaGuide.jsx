@@ -19,11 +19,11 @@ export const VisaGuide = ({ onClose }) => {
   return (
     <>
       {isOpen && !showUpload && (
-        <main className="modal-container">
+        <main className="model-container">
           <div className="guide-container">
-            <div className="head">
+            <div className="headings">
               <p>خطوة 1 من 3</p>
-              <h3>نوع الفيزا</h3>
+              <h3>هل أنت جاهز ؟</h3>
               <button className="close-button" onClick={handleClose}>
                 <img src={closeIcon} alt="Close" />
               </button>
@@ -31,11 +31,12 @@ export const VisaGuide = ({ onClose }) => {
             <div className="guide">
               <h4>سنرشدك خطوة بخطوة للحصول على التأشيرة الخاصة بك</h4>
               <h4>
-                الرجاء القيام بتسديد المبلغ المطلوب (959.5 جنيه مصري) إلى رقم
-                فودافون كاش+201070871896 والاحتفاظ برسالة تأكيد الدفع لتقوم
-                بتحميلها في الخطوة التالية
+                الرجاء القيام بتسديد المبلغ المطلوب (950 جنيه مصري) إلى رقم
+                الحساب <span>1130482599312</span> بنك qnb باسم{" "}
+                <span>abdelfatah mohamed</span> والاحتفاظ برسالة تأكيد الدفع
+                لتقوم بتحميلها في الخطوة التالية
               </h4>
-              <h4>صورة عن البطاقة الشخصية من الجهتين </h4>
+              <h4>صورة عن البطاقة الشخصية من الجهتين</h4>
               <h4>صورة عن جواز السفر</h4>
             </div>
             <button className="next" onClick={handleNext}>

@@ -2,9 +2,17 @@
   text-align: end;
   color: #103c55;
 }
-
+.guide h4 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.guide span {
+  font-weight: bold;
+}
 .guide-container {
-  width: 600px;
+  width: 1000px;
+  height: 400px;
   background-color: white;
   padding: 20px;
   border-radius: 8px;
