@@ -28,6 +28,8 @@
   font-weight: 500;
   cursor: pointer;
   color: #103c55;
+  border-right: 10px solid #103c55;
+  border-radius: 4px;
 }
 
 #accordion li label span {
@@ -51,6 +53,9 @@
 
 #accordion label + input[type="radio"]:checked + .content {
   max-height: 400px;
+  background: #f16333;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .content-header3 {
