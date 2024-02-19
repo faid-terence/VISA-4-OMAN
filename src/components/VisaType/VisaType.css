@@ -89,3 +89,7 @@
 .hidden {
   display: none;
 }
+
+.payment-options input[type="radio"]:checked {
+  color: #103c55;
+}
