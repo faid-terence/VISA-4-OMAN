@@ -1,15 +1,14 @@
 .uploading {
-  width: 600px;
+  width: 1000px;
   background-color: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height: 367px;
 }
 
 .upload {
   margin-top: 30px;
-  text-align: center;
+  text-align: end;
   color: #103c55;
 }
 
@@ -24,7 +23,7 @@
 }
 
 .next-upload {
-  margin-top: 80px;
+  margin-top: 0px;
   margin-left: 40px;
   background: #f16333;
   border: none;
