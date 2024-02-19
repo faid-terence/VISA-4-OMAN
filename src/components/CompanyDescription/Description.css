@@ -4,6 +4,9 @@
   align-items: center;
   margin-top: 20px;
 }
+.desc {
+  width: 1441px;
+}
 
 .left-features,
 .right-feature {
@@ -17,13 +20,16 @@
   text-align: center;
   background: url("../../assets/group.svg");
   background-size: contain;
+  margin-left: 190px;
+  margin-right: 190px;
 }
 
 .headerTitle {
   font-size: 24px;
   color: #103c55;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   cursor: pointer;
+  font-weight: bold;
 }
 .headerTitle:hover {
   color: #f16333;
@@ -32,7 +38,7 @@
   font-size: 20px;
   color: #103c55;
   font-family: "IBM Plex Sans Arabic";
-  font-weight: 400;
+  font-weight: 600;
   height: 60px;
   width: 400px;
   margin-left: 200px;
@@ -105,7 +111,7 @@
 
 @media screen and (max-width: 768px) {
   .decription-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .right-feature {
     padding-right: 0px;
@@ -118,5 +124,8 @@
   .five:hover,
   .six:hover {
     margin-left: 0;
+  }
+  .center-feature {
+    display: none;
   }
 }
