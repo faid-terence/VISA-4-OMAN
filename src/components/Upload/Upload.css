@@ -32,3 +32,15 @@
   height: 48px;
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .uploading {
+    width: 300px;
+  }
+  .next-upload {
+    margin-left: 0;
+  }
+  .upload {
+    width: 300px;
+  }
+}
