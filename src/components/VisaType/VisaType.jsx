@@ -54,8 +54,8 @@ export const VisaType = ({ onClose }) => {
                 }`}
                 onClick={() => handleOptionSelect("30-days")}
               >
-                <h2 className="title">تأشيرة سياحية لمدة 10 أيام</h2>
-                <p className="para">950 جنيه مصري *</p>
+                <h2 className="title">تأشيرة سياحية لمدة 30 يوماً</h2>
+                <p className="para">2750 جنيه مصري *</p>
               </div>
             </div>
             <div
@@ -83,7 +83,9 @@ export const VisaType = ({ onClose }) => {
             </button>
           </div>
         </div>
-      ) : <VisaGuide/>}
+      ) : (
+        <VisaGuide />
+      )}
     </>
   );
 };

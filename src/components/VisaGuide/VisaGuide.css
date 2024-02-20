@@ -11,10 +11,21 @@
   font-weight: bold;
 }
 .guide-container {
-  width: 1000px;
-  height: 400px;
+  width: 90%; /* Adjust width for mobile devices */
+  max-width: 1000px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center the container */
   background-color: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .guide-container {
+    width: 90%; /* Adjust width for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 10px; /* Adjust padding for smaller screens */
+    box-shadow: none; /* Remove box shadow for smaller screens */
+  }
 }
