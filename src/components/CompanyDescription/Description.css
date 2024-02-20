@@ -130,4 +130,7 @@
     display: none;
     margin: 0;
   }
+  .desc {
+    width: 100%;
+  }
 }

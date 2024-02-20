@@ -42,9 +42,9 @@ export const UploadComponent = () => {
 
   return (
     isOpen && (
-      <div className="modal-container">
+      <div className="model-container">
         <div className="uploading">
-          <div className="head">
+          <div className="headings">
             <p>خطوة 2 من 4</p>
             <h3>نوع الفيزا</h3>
             <button className="close-button" onClick={handleClose}>
